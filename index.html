@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>بنان | Banan</title>
+
+  <meta name="description" content="استبيان بحثي قصير لمشروع بنان لتعلّم لغة الإشارة السعودية. مشاركتك تهمّنا.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="بنان | Banan">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:title" content="بنان | Banan">
+  <meta property="og:description" content="استبيان بحثي قصير لمشروع بنان لتعلّم لغة الإشارة السعودية. مشاركتك تهمّنا.">
+  <meta property="og:url" content="https://banan-servay.netlify.app/">
+  <meta property="og:image" content="https://banan-servay.netlify.app/photo/banan-og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1304">
+  <meta property="og:image:height" content="816">
+  <meta property="og:image:alt" content="يدان بأسلوب البكسل تعبّران عن لغة الإشارة - بنان">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="بنان | Banan">
+  <meta name="twitter:image" content="https://banan-servay.netlify.app/photo/banan-og.jpg">
+
+  <link rel="icon" href="photo/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="photo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="photo/favicon-192.png">
+  <link rel="apple-touch-icon" href="photo/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=VT323&display=swap">
+  <link rel="stylesheet" href="style.css?v=28">
+</head>
+
+<body>
+  <div id="desk">
+    <div id="ic">
+      <button
+        id="startFile"
+        class="ico"
+        type="button"
+        disabled
+        data-ar-label="اضغط هنا لفتح استبيان بنان"
+        data-en-label="Open the Banan survey"
+      >
+        <svg width="56" height="64" viewBox="0 0 56 64" aria-hidden="true">
+          <path d="M6 4h30l14 14v42H6z" fill="#fff" stroke="#1b1b1b" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M36 4v14h14" fill="#ffd84d" stroke="#1b1b1b" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M14 30h28M14 40h28M14 50h18" stroke="#2aa3c4" stroke-width="3"/>
+        </svg>
+        <br>
+        <span data-lang="ar">اضغط هنا</span>
+        <span data-lang="en" hidden>Open survey</span>
+      </button>
+
+      <p id="startStatus" role="status">
+        <span data-lang="ar">جارٍ تجهيز الاستبيان… حدّث الصفحة إذا استمر الانتظار.</span>
+        <span data-lang="en" hidden>Preparing the survey… Refresh the page if this takes too long.</span>
+      </p>
+    </div>
+  </div>
+
+  <div id="bar">
+    <button class="btn st" id="stb" type="button">
+      ★
+      <span data-lang="ar">عن بنان</span>
+      <span data-lang="en" hidden>About Banan</span>
+    </button>
+
+    <button
+      class="btn language-toggle"
+      id="languageToggle"
+      data-language-toggle
+      type="button"
+    >🌐 English</button>
+
+    <span id="clk"></span>
+
+    <small
+      id="savehint"
+      role="status"
+      aria-live="polite"
+      style="text-align:start;color:#7b4b00"
+    ></small>
+
+    <button
+      class="btn"
+      id="mu"
+      type="button"
+      data-ar-label="تبديل الصوت"
+      data-en-label="Toggle sound"
+    >🔊</button>
+  </div>
+
+  <div id="mn">
+    <button class="btn mi" id="m1" type="button">
+      <span data-lang="ar">عن بنان 💙</span>
+      <span data-lang="en" hidden>About Banan 💙</span>
+    </button>
+
+    <button class="btn mi" id="m2" type="button">
+      <span data-lang="ar">عن الاستبيان ⏱</span>
+      <span data-lang="en" hidden>About the survey ⏱</span>
+    </button>
+
+    <button class="btn mi" id="m3" type="button" style="display:none">
+      <span data-lang="ar">إجاباتي 📄</span>
+      <span data-lang="en" hidden>My answers 📄</span>
+    </button>
+  </div>
+
+  <script src="app.js?v=30" defer></script>
+</body>
+</html>
